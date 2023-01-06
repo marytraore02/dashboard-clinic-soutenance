@@ -16,12 +16,17 @@ import {MatDividerModule} from '@angular/material/divider';
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './sidenav/sidenav/sidenav.component';
 import { ProfilComponent } from './profil/profil.component';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
-    ProfilComponent
+    ProfilComponent,
+    HomeComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +42,7 @@ import { ProfilComponent } from './profil/profil.component';
     MatExpansionModule,
     MatTooltipModule,
     MatDividerModule,
+    AppRoutingModule,
     RouterModule.forRoot([])
   ],
   providers: [],
